@@ -1,0 +1,62 @@
+@use "../partials/importer" as *;
+
+
+// .view-content.slick-initialized.slick-slider.slick-dotted {
+//   position: relative;
+
+//   .arrow.slick-arrow {
+//     position: absolute;
+//     transition: 0.5s;
+//     top: 50%;
+//     transform: translate(0, -50%);
+//     z-index: 2;
+
+//     .lni-chevron-left::before,
+//     .lni-chevron-right::before {
+//       color: $brand-secondary-color;
+//       font-size: 35px;
+//     }
+//   }
+
+//   .views-field-field-match-image {
+//     img {
+//       width: 100%;
+//       height: 650px;
+//     }
+//   }
+
+//   .views-field-field-title {
+//     .field-content {
+//       position: absolute;
+
+//       color: white;
+//       // font-size: 15px;
+//       bottom: 0;
+//       left: 0;
+
+
+//     }
+//   }
+// }
+.views-row.slick-slide.slick-current.slick-active {
+  position: relative;
+
+  .views-field-title {
+    position: absolute;
+    top: 10%;
+
+    a {
+      color: white;
+
+    }
+  }
+
+  .views-field-field-match-image {
+
+    img {
+      width: 100%;
+      height: 650px;
+    }
+  }
+
+}

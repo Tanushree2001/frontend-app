@@ -1,0 +1,21 @@
+uuid: 7d75b566-2750-49c5-8b18-d4cdf99a1600
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_and_
+    - node.type.hero
+  module:
+    - datetime
+id: node.hero.field_date_and_
+field_name: field_date_and_
+entity_type: node
+bundle: hero
+label: 'Date and Time'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,4 @@
+name: frontend-third-app
+recipe: drupal10
+config:
+  webroot: web

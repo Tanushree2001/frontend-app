@@ -1,0 +1,32 @@
+uuid: 5acfb82b-10bc-4b00-87a5-6feb03cb173a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.banner.field_banner_image
+    - node.type.banner
+  module:
+    - image
+    - user
+id: node.banner.default
+targetEntityType: node
+bundle: banner
+mode: default
+content:
+  field_banner_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

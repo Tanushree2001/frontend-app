@@ -1,0 +1,21 @@
+uuid: ec27028f-099b-4e62-9aa3-f02586225703
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codename_team2
+    - node.type.hero
+id: node.hero.field_codename_team2
+field_name: field_codename_team2
+entity_type: node
+bundle: hero
+label: 'CodeName Team2'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

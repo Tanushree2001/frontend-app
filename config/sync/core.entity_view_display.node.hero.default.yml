@@ -1,0 +1,106 @@
+uuid: 4a07992d-e837-499a-94fe-4f900255e902
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hero.body
+    - field.field.node.hero.field_code
+    - field.field.node.hero.field_codename_team2
+    - field.field.node.hero.field_date_and_
+    - field.field.node.hero.field_fu
+    - field.field.node.hero.field_fullname_team2
+    - field.field.node.hero.field_location
+    - field.field.node.hero.field_match_image
+    - field.field.node.hero.field_title
+    - node.type.hero
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.hero.default
+targetEntityType: node
+bundle: hero
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_code:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_codename_team2:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_date_and_:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_fu:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_fullname_team2:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_location:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_match_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
