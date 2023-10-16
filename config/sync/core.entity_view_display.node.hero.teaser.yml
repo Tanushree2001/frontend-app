@@ -1,0 +1,46 @@
+uuid: 517b1c31-931e-413a-9d0a-19d7e566f10e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hero.body
+    - field.field.node.hero.field_code
+    - field.field.node.hero.field_codename_team2
+    - field.field.node.hero.field_date_and_
+    - field.field.node.hero.field_fu
+    - field.field.node.hero.field_fullname_team2
+    - field.field.node.hero.field_location
+    - field.field.node.hero.field_match_image
+    - field.field.node.hero.field_title
+    - node.type.hero
+  module:
+    - text
+    - user
+id: node.hero.teaser
+targetEntityType: node
+bundle: hero
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_code: true
+  field_codename_team2: true
+  field_date_and_: true
+  field_fu: true
+  field_fullname_team2: true
+  field_location: true
+  field_match_image: true
+  field_title: true

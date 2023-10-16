@@ -1,0 +1,29 @@
+uuid: 8970a880-ed39-4171-8f3b-38be4eb43f61
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.banner
+  module:
+    - system
+    - views
+  theme:
+    - simplesmart
+id: views_block__banner_block_1
+theme: simplesmart
+region: content_top
+weight: 0
+provider: null
+plugin: 'views_block:banner-block_1'
+settings:
+  id: 'views_block:banner-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /banner

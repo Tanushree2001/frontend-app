@@ -1,0 +1,18 @@
+uuid: e0eb6e84-9d96-4363-b7c2-e66eba013f0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Hero
+type: hero
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

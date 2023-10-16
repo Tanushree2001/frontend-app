@@ -1,0 +1,83 @@
+uuid: d7781a73-4713-4acb-95e7-6c5e824a0866
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.movie.body
+    - field.field.node.movie.field_add_to_top_10
+    - field.field.node.movie.field_cta
+    - field.field.node.movie.field_genre
+    - field.field.node.movie.field_movie_image
+    - field.field.node.movie.field_release_date
+    - image.style.movie_banner
+    - node.type.movie
+  module:
+    - datetime
+    - image
+    - link
+    - text
+    - user
+id: node.movie.teaser
+targetEntityType: node
+bundle: movie
+mode: teaser
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_add_to_top_10:
+    type: boolean
+    label: visually_hidden
+    settings:
+      format: custom
+      format_custom_false: N/A
+      format_custom_true: 'Top 10'
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_cta:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_genre:
+    type: entity_reference_label
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_movie_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: movie_banner
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_release_date:
+    type: datetime_plain
+    label: visually_hidden
+    settings:
+      timezone_override: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  links: true

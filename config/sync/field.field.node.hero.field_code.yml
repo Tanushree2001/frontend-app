@@ -1,0 +1,29 @@
+uuid: f1d75d45-c53a-4cc7-9242-542d4aebb109
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_code
+    - node.type.hero
+    - taxonomy.vocabulary.codename_team1
+id: node.hero.field_code
+field_name: field_code
+entity_type: node
+bundle: hero
+label: 'CodeName Team1'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      codename_team1: codename_team1
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

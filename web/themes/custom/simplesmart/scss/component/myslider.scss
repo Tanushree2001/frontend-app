@@ -1,0 +1,165 @@
+//Importing partials
+@use "../partials/importer" as *;
+
+/*
+This file containes the css of home
+*/
+.full_container {
+  width: 100%;
+
+  .inside_container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    // font-family: Montserrat-Black;
+
+    .logo {
+      width: 10%;
+      height: 20%;
+      background-color: $bg-accent-color;
+      background-image: url(/themes/custom/simplesmart/image/world-cup.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 10%;
+      left: 40px;
+    }
+
+    .match_image {
+      width: 100%;
+      background-color: $bg-accent-color;
+
+      img {
+        width: 100%;
+        height: 650px;
+        opacity: 0.5;
+      }
+    }
+
+    .match_content {
+      position: absolute;
+      bottom: 10%;
+      left: 40px;
+      width: 40%;
+
+      //styling match title
+      .match_content--title {
+
+     
+        a {
+          font-size: 40px;
+          color: $brand-secondary-color;
+          font-weight: 500;
+        }
+
+        span {
+          font-size: 40px;
+          color: $brand-secondary-color;
+          font-weight: 500;
+        }
+      }
+
+      //styling match date
+      .match_content--date {
+        color: $purple-color;
+        font-size: 25px;
+
+      }
+
+      // styling match location 
+      .match_content--location {
+        color: $brand-secondary-color;
+        font-size: 30px;
+        font-weight: 350;
+        margin-bottom: 30px;
+
+        .circle{
+          padding: 4px 5px;
+          font-size: 3px;
+          border-radius: 50%;
+          background-color: $red-color;
+          margin-right: 10px;
+          vertical-align: middle;
+        }
+      }
+
+      // hashtag
+      .go_india {
+        display: none;
+        width: 15%;
+        height: 4%;
+        background-color: $blue-color;
+        border-radius: 2rem;
+        align-items: center;
+
+        p {
+          color: $brand-secondary-color;
+          font-size: 15px;
+          padding: 8px 15px;
+        }
+      }
+
+      .match_content--desc {
+        p {
+          font-size: 16px;
+          color: $brand-secondary-color;
+        }
+      }
+    }
+  }
+}
+
+// slick left arrow 
+.Slick-Prev.arrow.slick-arrow {
+  position: absolute;
+  bottom: 10%;
+  right: 14%;
+  font-size: 40px;
+  z-index: 2;
+  background-color: $bg-accent-color;
+  opacity: 0.5;
+  padding: 0 15px;
+
+  i {
+    color: $brand-secondary-color;
+  }
+}
+
+//slick right arrow
+.Slick-Next.arrow.slick-arrow {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  font-size: 40px;
+  z-index: 2;
+  background-color: $bg-accent-color;
+  opacity: 0.5;
+  padding: 0 15px;
+
+  i {
+    color: $brand-secondary-color;
+  }
+}
+  // slick dots 
+  .slick-dots {
+    bottom: 80px;
+    text-align: right;
+    padding-right: 20rem;
+    li{
+        width: 50px;
+        margin: 0;
+      button{
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          z-index: 99;
+      }
+    }
+  }
+}
